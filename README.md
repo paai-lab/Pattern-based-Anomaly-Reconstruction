@@ -17,6 +17,7 @@ The statistics of datasets are summarised in Table 1 presented below.
 ![image](https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png) 
 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
 ## Result 1: Anomaly pattern classification accuracy by our proposed algorithm
 
