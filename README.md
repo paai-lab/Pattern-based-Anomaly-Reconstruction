@@ -1,6 +1,6 @@
 # Anomaly Reconstruction
 
-This repository shows developed algorithm of Pattern-based Anomaly Reconstruction
+This repository shows developed algorithm of Pattern-based Anomaly Reconstruction (PBAR).
 The framework is coded using statistical package R as seen in folder "util" and it calculates anomaly matrix for each case and reconstructs the anomalies with predicting anomaly pattern. 
 
 
@@ -44,7 +44,7 @@ More in detail, since artificial logs are generated from simple process models, 
 <img src="https://user-images.githubusercontent.com/74713590/168027275-0cdd1167-853a-40d5-89ed-27f3a27aab7f.png" width="500" height="300">
 
 
-Table 3 compares the reconstruction accuracy, calculated using both the classification accuracy and the average distance, and the run time of PBAR and the baselines.  Note that, since DeepAlign is an unsupervised approach, which does not require a case label in the input dataset, for it we show separately the reconstruction accuracy on normal traces and anomalous traces. That is, the unsupervised design may generate errors even in normal traces. Otherwise, since both the proposed approach and the alignment baselines are semi-supervised, i.e., they require a set of clean labelled traces in input, the reconstruction accuracy of both approaches on normal traces is obviously perfect. Finally, note that, for the distance accuracy, we also report the average distance between normal and reconstructed traces before the reconstruction as a reference. More details about evaluation can be seen in our paper. 
+Table 3 compares the reconstruction accuracy, calculated using both the classification accuracy and the average distance, and the run time of PBAR and the baselines.  Note that, since DeepAlign is an unsupervised approach, which does not require a case label in the input dataset, for it we show separately the reconstruction accuracy on normal traces and anomalous traces. That is, the unsupervised design may generate errors even in normal traces. Otherwise, since both the proposed approach and the alignment baselines are semi-supervised, i.e., they require a set of clean labelled traces in input, the reconstruction accuracy of both approaches on normal traces is obviously perfect. Finally, note that, for the distance accuracy, we also report the average distance between normal and reconstructed traces before the reconstruction as a reference. More details about the evaluation can be seen in our paper. 
 
 
 
