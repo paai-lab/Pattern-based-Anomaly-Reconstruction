@@ -3,6 +3,14 @@
 This repository shows developed algorithm of Pattern-based Anomaly Reconstruction
 The framework is coded using statistical package R as seen in folder "util" and it calculates anomaly matrix for each case and reconstructs the anomalies with predicting anomaly pattern. 
 
+## R-files
+- util/vTree.R : function for training a reference model (directly followed graph)
+- util/vForest.R : function for calculating anomaly matrix and reconstructing anomalies
+- preprocesssing.R : data preprocessing before implementing anomaly reconstruction 
+- implementation.R : Implementation of vTree and vForest (= Pattern-based Anomaly Reconstruction)
+
+&#x1F53A; Be careful to correctly set your working directory for each R file as uploaded files contain my own local directory.
+
 ## Prepared Data1 - 5 artificial logs
 We used 5 types of process models including small, medium, large, huge, and wide refered from [1] to generate artificial logs. 
 
@@ -14,8 +22,7 @@ Finally, after the anomalies have been injected, the cases labelled as anomalous
 
 The statistics of datasets are summarised in Table 1 presented below.
 
-![image](https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png) 
-
+<img src="https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png" width="500" height="250">
 
 
 ## Result 1: Anomaly pattern classification accuracy by our proposed algorithm
@@ -32,14 +39,6 @@ More in detail, since artificial logs are generated from simple process models, 
 
 ## Result 3: Reconstruction accuracy for different anomaly patterns
 
-
-## R-files
-- util/vTree.R : function for training a reference model (directly followed graph)
-- util/vForest.R : function for calculating anomaly matrix and reconstructing anomalies
-- preprocesssing.R : data preprocessing before implementing anomaly reconstruction 
-- implementation.R : Implementation of vTree and vForest (= Pattern-based Anomaly Reconstruction)
-
-&#x1F53A; Be careful to correctly set your working directory for each R file as uploaded files contain my own local directory.
 
 
 ## References
