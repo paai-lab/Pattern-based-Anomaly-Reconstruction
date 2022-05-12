@@ -37,8 +37,16 @@ More in detail, since artificial logs are generated from simple process models, 
 
 ## Result 2: Anomalous trace reconstruction accuracy
 
+<img src="https://user-images.githubusercontent.com/74713590/168026502-a8070738-7910-4a31-92ff-0338d82b1191.png" width="500" height="300">
+
+
+
+Table 3 compares the reconstruction accuracy, calculated using both the classification accuracy and the average distance, and the run time of PBAR and the baselines.  Note that, since DeepAlign is an unsupervised approach, which does not require a case label in the input dataset, for it we show separately the reconstruction accuracy on normal traces and anomalous traces. That is, the unsupervised design may generate errors even in normal traces. Otherwise, since both the proposed approach and the alignment baselines are semi-supervised, i.e., they require a set of clean labelled traces in input, the reconstruction accuracy of both approaches on normal traces is obviously perfect. Finally, note that, for the distance accuracy, we also report the average distance between normal and reconstructed traces before the reconstruction as a reference. More details about evaluation can be seen in our paper. 
+
+
 ## Result 3: Reconstruction accuracy for different anomaly patterns
 
+<img src="https://user-images.githubusercontent.com/74713590/168026459-4c833c34-9c0e-4ef5-92e4-11ce63fbe4dd.png" width="500" height="450">
 
 
 ## References
