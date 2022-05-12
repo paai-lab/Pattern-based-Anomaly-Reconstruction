@@ -22,7 +22,7 @@ Finally, after the anomalies have been injected, the cases labelled as anomalous
 
 The statistics of datasets are summarised in Table 1 presented below.
 
-<img src="https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png" width="500" height="250">
+<img src="https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png" width="500" height="150">
 
 
 ## Result 1: Anomaly pattern classification accuracy by our proposed algorithm
@@ -65,7 +65,7 @@ Note that, in general, the anomaly detection matrix is recalculated for every re
 An example of the analysis and reconstruction of this pattern is shown in Figure~\ref{fig:vote}, where in the anomalous trace the "Send fine" activity has been skipped.
 
 
-_Insert pattern._ Figure 2(b) shows the pattern in the anomaly detection matrix identifying the insertion of _S_ unexpected events in a trace between the events <img src="https://render.githubusercontent.com/render/math?math={\color{white} a_i}"> and <img src="https://render.githubusercontent.com/render/math?math={\color{white} a_{i+S+1}}">.  For the reconstruction, the _S_ events inserted are deleted from the trace. An example of the detection and reconstruction of this pattern is shown in Figure~2, where  in the anomalous trace the activity "Wrong event" has been inserted at position 2 in the trace. The anomaly detection pattern is clearly identifiable in the anomaly detection matrix. 
+_Insert pattern._ Figure 2(b) shows the pattern in the anomaly detection matrix identifying the insertion of _S_ unexpected events in a trace between the events <img src="https://render.githubusercontent.com/render/math?math={\color{white} a_i}"> and <img src="https://render.githubusercontent.com/render/math?math={\color{white} a_{i \add S \add 1}}">.  For the reconstruction, the _S_ events inserted are deleted from the trace. An example of the detection and reconstruction of this pattern is shown in Figure~2, where  in the anomalous trace the activity "Wrong event" has been inserted at position 2 in the trace. The anomaly detection pattern is clearly identifiable in the anomaly detection matrix. 
 
 _Rework pattern._ The rework pattern is a special case of the insert one in which all the events inserted have the same activity label (see Figure 2(c)). As such, the detection and reconstruction of this pattern is already captured by what described above for the insert pattern.  
 
