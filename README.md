@@ -3,6 +3,7 @@
 This repository shows developed algorithm of Pattern-based Anomaly Reconstruction
 The framework is coded using statistical package R as seen in folder "util" and it calculates anomaly matrix for each case and reconstructs the anomalies with predicting anomaly pattern. 
 
+
 ## R-files
 - util/vTree.R : function for training a reference model (directly followed graph)
 - util/vForest.R : function for calculating anomaly matrix and reconstructing anomalies
@@ -11,8 +12,10 @@ The framework is coded using statistical package R as seen in folder "util" and 
 
 &#x1F53A; Be careful to correctly set your working directory for each R file as uploaded files contain my own local directory.
 
+
 ## Prepared Data1 - 5 artificial logs
 We used 5 types of process models including small, medium, large, huge, and wide refered from [1] to generate artificial logs. 
+
 
 ## Prepared Data2 - 2 real-life logs
 For the real life logs, we consider the Hospital Billing event log containing events about the billing of medical services that have been obtained from the financial modules of the ERP system of a regional hospital, and the Road Traffic event log which collects events about a road traffic fine management process at a local police authority in Italy.
@@ -35,18 +38,19 @@ The results regarding the accuracy of PBAR in identifying the correct anomalous 
 More in detail, since artificial logs are generated from simple process models, as acknowledged by the low frequency distribution of clean trace variants in Table 1, the proposed approach has no particular issues in identifying all the correct patterns with the artificial logs. For the real logs, for which the variability of traces is higher, the results show that the proposed approach works well for identifying the _skip_ anomaly pattern, comparably worse for the _insert_ and _replace_ patterns, and mainly fails to identify the _rework_ pattern. The poor accuracy on the _rework_ pattern may be caused by the existence of reworked activities in clean traces, which would lead PBAR to identify these reworked activities as normal. Regarding the $move$ pattern, if an event is moved (backward or forward) of only one event from its current location in a trace, then the anomaly detection matrix obtained for this pattern looks the same as the one obtained from the _insert_ or the _replace_ patterns, and the heuristic examination to select the correct pattern among the candidates often fails. This  happens more often when clean variants in <img src="https://render.githubusercontent.com/render/math?math={\color{white} E_c}"> are more diverse, i.e., when there are several alternatives for reconstruction, leading to the low performance on the _move_ pattern, particularly in the Hospital Billing log. 
 
 
+
 ## Result 2: Anomalous trace reconstruction accuracy
 
 <img src="https://user-images.githubusercontent.com/74713590/168026502-a8070738-7910-4a31-92ff-0338d82b1191.png" width="500" height="300">
 
-
-
 Table 3 compares the reconstruction accuracy, calculated using both the classification accuracy and the average distance, and the run time of PBAR and the baselines.  Note that, since DeepAlign is an unsupervised approach, which does not require a case label in the input dataset, for it we show separately the reconstruction accuracy on normal traces and anomalous traces. That is, the unsupervised design may generate errors even in normal traces. Otherwise, since both the proposed approach and the alignment baselines are semi-supervised, i.e., they require a set of clean labelled traces in input, the reconstruction accuracy of both approaches on normal traces is obviously perfect. Finally, note that, for the distance accuracy, we also report the average distance between normal and reconstructed traces before the reconstruction as a reference. More details about evaluation can be seen in our paper. 
+
 
 
 ## Result 3: Reconstruction accuracy for different anomaly patterns
 
 <img src="https://user-images.githubusercontent.com/74713590/168026459-4c833c34-9c0e-4ef5-92e4-11ce63fbe4dd.png" width="500" height="350">
+
 
 
 ## References
