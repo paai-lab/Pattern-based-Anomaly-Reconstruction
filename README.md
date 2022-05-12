@@ -22,7 +22,7 @@ Finally, after the anomalies have been injected, the cases labelled as anomalous
 
 The statistics of datasets are summarised in Table 1 presented below.
 
-<img src="https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png" width="500" height="150">
+<img src="https://user-images.githubusercontent.com/74713590/168015281-5e6085af-43ef-496c-aee5-be7593a07f20.png" width="400" height="150">
 
 
 ## Result 1: Anomaly pattern classification accuracy by our proposed algorithm
@@ -46,7 +46,7 @@ Table 3 compares the reconstruction accuracy, calculated using both the classifi
 
 ## Result 3: Reconstruction accuracy for different anomaly patterns
 
-<img src="https://user-images.githubusercontent.com/74713590/168026459-4c833c34-9c0e-4ef5-92e4-11ce63fbe4dd.png" width="500" height="450">
+<img src="https://user-images.githubusercontent.com/74713590/168026459-4c833c34-9c0e-4ef5-92e4-11ce63fbe4dd.png" width="500" height="350">
 
 
 ## References
